@@ -18,4 +18,10 @@ export class AppComponent {
         this.response = JSON.stringify(data)        
       })
   }
+  getDesperfectos(){
+    return this.http.get("https://nodejs-mongodb-ticketera.herokuapp.com/desperfectos")
+      .subscribe((data:any) => {
+        this.response = JSON.stringify(data)        
+      })
+  }
 }
