@@ -10,8 +10,8 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class AppComponent {
   constructor(private http: HttpClient) {
-    this.usedUrl = this.urlLocal;
-    //this.usedUrl=this.urlServer;
+    //this.usedUrl = this.urlLocal;
+    this.usedUrl=this.urlServer;
   }
   title = 'ticketera';
   urlLocal = "http://localhost:8080/";
